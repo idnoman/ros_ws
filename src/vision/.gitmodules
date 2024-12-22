@@ -1,0 +1,3 @@
+[submodule "vision/camera"]
+	path = vision/camera
+	url = git@gitlab.com:kn-robocik/software/libraries/camera_manager.git
