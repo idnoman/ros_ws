@@ -13,7 +13,7 @@ class CameraPublisherNode : public rclcpp::Node {
       publisher_ =
           this->create_publisher<sensor_msgs::msg::Image>("camera_image", 10);
 
-      if (!cap_.open(2)) {
+      if (!cap_.open(0)) {
         RCLCPP_ERROR(this->get_logger(), "Could not open the camera");
         rclcpp::shutdown();
       }
